@@ -1,3 +1,5 @@
+import 'package:dashboarda_app/widget/desktop_view.dart';
+import 'package:dashboarda_app/widget/adaptive_layout.dart';
 import 'package:flutter/material.dart';
 
 class DashboardView extends StatelessWidget {
@@ -5,6 +7,12 @@ class DashboardView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: AdaptiveLayout(
+        moibleLayout: (context) => SizedBox(),
+        tabletlayout: (context) => SizedBox(),
+        dektopLayout: (context) => DesptopLayout(),
+      ),
+    );
   }
 }
