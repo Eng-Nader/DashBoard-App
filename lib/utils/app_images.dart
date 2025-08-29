@@ -1,7 +1,6 @@
-
 class AppImage {
   AppImage._();
-  
+
   static const String imagesBalance = "assets/images/balance.svg";
 
   static const String imagesCard = "assets/images/card.svg";
@@ -27,5 +26,6 @@ class AppImage {
   static const String imagesTransaction = "assets/images/transaction.svg";
 
   static const String imagesWallet = "assets/images/wallet.svg";
-}
 
+  static const String imagesMoonLightDark = "assets/images/moonDarkLight.svg";
+}

@@ -1,3 +1,4 @@
+import 'package:dashboarda_app/widget/custom_drawar.dart';
 import 'package:flutter/material.dart';
 
 class DesptopLayout extends StatelessWidget {
@@ -5,6 +6,12 @@ class DesptopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Row(
+      children: [
+        Expanded(
+          child: CustomDrawar(),
+        ),
+      ],
+    );
   }
 }

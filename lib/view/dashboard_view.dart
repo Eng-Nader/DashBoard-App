@@ -1,4 +1,4 @@
-import 'package:dashboarda_app/widget/desktop_view.dart';
+import 'package:dashboarda_app/widget/desktop_layout.dart';
 import 'package:dashboarda_app/widget/adaptive_layout.dart';
 import 'package:flutter/material.dart';
 
