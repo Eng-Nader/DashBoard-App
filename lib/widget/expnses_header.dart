@@ -1,5 +1,3 @@
-
-
 import 'package:dashboarda_app/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
@@ -20,10 +18,16 @@ class ExpensesHeader extends StatelessWidget {
         Card(
           elevation: .8,
           child: Container(
-            height: 48,
-            width: 134,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(8),
+            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 14),
+            decoration: ShapeDecoration(
+              color: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+                side: BorderSide(
+                  width: 1,
+                  color: Color(0xffF1F1F1),
+                ),
+              ),
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -32,8 +36,12 @@ class ExpensesHeader extends StatelessWidget {
                   'Monthly',
                   style: AppStyle.styleMedium16,
                 ),
-                Icon(
-                  Icons.arrow_downward,
+                Transform.rotate(
+                  angle: 4.71239,
+                  child: Icon(
+                    Icons.arrow_back_ios_new_rounded,
+                    color: Color(0xff064061),
+                  ),
                 ),
               ],
             ),

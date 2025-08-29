@@ -15,9 +15,21 @@ class CustomExpnses extends StatelessWidget {
       ),
       child: Column(
         children: [
-          ExpensesHeader() , 
+          ExpensesHeader(),
+          SizedBox(
+            height: 16,
+          ),
         ],
       ),
     );
+  }
+}
+
+class ExpensesItem extends StatelessWidget {
+  const ExpensesItem({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold();
   }
 }
