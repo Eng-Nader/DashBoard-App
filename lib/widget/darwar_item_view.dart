@@ -37,9 +37,7 @@ class _DarwarItemViewState extends State<DarwarItemView> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
+    return SliverList.builder(
       itemCount: darwarItemListe.length,
       itemBuilder: (context, index) {
         return InkWell(
