@@ -1,4 +1,5 @@
 import 'package:dashboarda_app/utils/app_style.dart';
+import 'package:dashboarda_app/widget/expenses_item.dart';
 import 'package:dashboarda_app/widget/expnses_header.dart';
 import 'package:flutter/material.dart';
 
@@ -19,17 +20,9 @@ class CustomExpnses extends StatelessWidget {
           SizedBox(
             height: 16,
           ),
+          ExpensesItem(),
         ],
       ),
     );
-  }
-}
-
-class ExpensesItem extends StatelessWidget {
-  const ExpensesItem({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold();
   }
 }

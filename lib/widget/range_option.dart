@@ -1,0 +1,53 @@
+import 'package:dashboarda_app/utils/app_style.dart';
+import 'package:flutter/material.dart';
+
+class RangeOption extends StatelessWidget {
+  const RangeOption({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(
+          'All Expenses',
+          style: AppStyle.styleSemibold20,
+        ),
+        Card(
+          elevation: .8,
+          child: Container(
+            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 14),
+            decoration: ShapeDecoration(
+              color: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+                side: BorderSide(
+                  width: 1,
+                  color: Color(0xffF1F1F1),
+                ),
+              ),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Text(
+                  'Monthly',
+                  style: AppStyle.styleMedium16,
+                ),
+                Transform.rotate(
+                  angle: 4.71239,
+                  child: Icon(
+                    Icons.arrow_back_ios_new_rounded,
+                    color: Color(0xff064061),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
