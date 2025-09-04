@@ -1,4 +1,5 @@
-import 'package:dashboarda_app/utils/app_style.dart';
+import 'package:dashboarda_app/models/expenses_model.dart';
+import 'package:dashboarda_app/utils/app_images.dart';
 import 'package:dashboarda_app/widget/expenses_item.dart';
 import 'package:dashboarda_app/widget/expnses_header.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,14 @@ class CustomExpnses extends StatelessWidget {
           SizedBox(
             height: 16,
           ),
-          ExpensesItem(),
+          ExpensesItem(
+            expensesModel: ExpensesModel(
+              data: 'April 2022',
+              image: AppImage.imagesIncome,
+              price: r'$20,129',
+              title: 'Income',
+            ),
+          ),
         ],
       ),
     );
