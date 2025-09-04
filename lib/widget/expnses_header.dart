@@ -1,4 +1,3 @@
-import 'package:dashboarda_app/utils/app_style.dart';
 import 'package:dashboarda_app/widget/range_option.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +8,6 @@ class ExpensesHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RangeOption();
+    return const RangeOption();
   }
 }

@@ -6,7 +6,7 @@ void main() {
   runApp(
     DevicePreview(
       enabled: true,
-      builder: (context) => DashBoardApp(),
+      builder: (context) => const DashBoardApp(),
     ),
   );
 }
@@ -20,7 +20,7 @@ class DashBoardApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
-      home: Scaffold(
+      home: const Scaffold(
         body: DashboardView(),
       ),
     );

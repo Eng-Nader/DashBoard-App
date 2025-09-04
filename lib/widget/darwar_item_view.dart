@@ -12,23 +12,23 @@ class DarwarItemView extends StatefulWidget {
 
 class _DarwarItemViewState extends State<DarwarItemView> {
   final List<DarwarItemModel> darwarItemListe = [
-    DarwarItemModel(
+    const DarwarItemModel(
       image: AppImage.imagesDashboard,
       title: 'Dashboard',
     ),
-    DarwarItemModel(
+    const DarwarItemModel(
       image: AppImage.imagesTransaction,
       title: 'My Transaction',
     ),
-    DarwarItemModel(
+    const DarwarItemModel(
       image: AppImage.imagesStatics,
       title: 'Statistics',
     ),
-    DarwarItemModel(
+    const DarwarItemModel(
       image: AppImage.imagesWallet,
       title: 'Wallet Account',
     ),
-    DarwarItemModel(
+    const DarwarItemModel(
       image: AppImage.imagesInvesment,
       title: 'My Investments',
     ),

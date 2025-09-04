@@ -11,19 +11,19 @@ class RangeOption extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
+        const Text(
           'All Expenses',
           style: AppStyle.styleSemibold20,
         ),
         Card(
           elevation: .8,
           child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 14),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 14),
             decoration: ShapeDecoration(
               color: Colors.white,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
-                side: BorderSide(
+                side: const BorderSide(
                   width: 1,
                   color: Color(0xffF1F1F1),
                 ),
@@ -32,13 +32,13 @@ class RangeOption extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text(
+                const Text(
                   'Monthly',
                   style: AppStyle.styleMedium16,
                 ),
                 Transform.rotate(
                   angle: 4.71239,
-                  child: Icon(
+                  child: const Icon(
                     Icons.arrow_back_ios_new_rounded,
                     color: Color(0xff064061),
                   ),

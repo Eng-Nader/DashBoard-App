@@ -15,7 +15,7 @@ class ExpensesItemHeader extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 20,
-          backgroundColor: Color(0xffFAFAFA),
+          backgroundColor: const Color(0xffFAFAFA),
           child: Center(
             child: SvgPicture.asset(
               image,
@@ -24,7 +24,7 @@ class ExpensesItemHeader extends StatelessWidget {
         ),
         Transform.rotate(
           angle: 3.14159,
-          child: Icon(
+          child: const Icon(
             Icons.arrow_back_ios,
             color: Colors.white,
           ),

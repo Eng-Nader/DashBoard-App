@@ -23,7 +23,7 @@ class ActiveDarwarItem extends StatelessWidget {
       ),
       trailing: Container(
         width: 3.27,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xff4EB7F2),
         ),
       ),
