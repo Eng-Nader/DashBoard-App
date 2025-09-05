@@ -11,22 +11,23 @@ class ExpensesItemHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        CircleAvatar(
-          radius: 20,
-          backgroundColor: const Color(0xffFAFAFA),
-          child: Center(
-            child: SvgPicture.asset(
-              image,
-            ),
+        Container(
+          padding: const EdgeInsets.all(14),
+          height: 60,
+          width: 60,
+          decoration: const ShapeDecoration(
+            shape: OvalBorder(),
+            color: Color(0xffFAFAFA),
           ),
+          child: SvgPicture.asset(image),
         ),
+        const Expanded(child: SizedBox()),
         Transform.rotate(
           angle: 3.14159,
           child: const Icon(
             Icons.arrow_back_ios,
-            color: Colors.white,
+            color: Colors.black,
           ),
         ),
       ],
