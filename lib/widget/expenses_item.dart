@@ -3,8 +3,8 @@ import 'package:dashboarda_app/utils/app_style.dart';
 import 'package:dashboarda_app/widget/expenses_item_header.dart';
 import 'package:flutter/material.dart';
 
-class ExpensesItem extends StatelessWidget {
-  const ExpensesItem({super.key, required this.expensesModel});
+class AllExpensesItem extends StatelessWidget {
+  const AllExpensesItem({super.key, required this.expensesModel});
   final ExpensesModel expensesModel;
 
   @override

@@ -21,7 +21,7 @@ class CustomExpnses extends StatelessWidget {
           SizedBox(
             height: 16,
           ),
-          ExpensesItem(
+          AllExpensesItem(
             expensesModel: ExpensesModel(
               data: 'April 2022',
               image: AppImage.imagesIncome,
