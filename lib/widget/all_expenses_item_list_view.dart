@@ -3,8 +3,14 @@ import 'package:dashboarda_app/utils/app_images.dart';
 import 'package:dashboarda_app/widget/all_expenses_item.dart';
 import 'package:flutter/material.dart';
 
-class AllExpensesItemListView extends StatelessWidget {
+class AllExpensesItemListView extends StatefulWidget {
   const AllExpensesItemListView({super.key});
+
+  @override
+  State<AllExpensesItemListView> createState() => _AllExpensesItemListViewState();
+}
+
+class _AllExpensesItemListViewState extends State<AllExpensesItemListView> {
   final List<ExpensesModel> expensesList = const [
     ExpensesModel(
       data: 'April 2022',
@@ -25,6 +31,7 @@ class AllExpensesItemListView extends StatelessWidget {
       title: 'Expenses',
     ),
   ];
+   int currntIndex = 0 ; 
 
   @override
   Widget build(BuildContext context) {
@@ -36,11 +43,15 @@ class AllExpensesItemListView extends StatelessWidget {
           return Expanded(
             child: Padding(
               padding:  const EdgeInsets.symmetric(horizontal: 12),
-              child: AllExpensesItem(expensesModel: item),
+              child: GestureDetector(
+                onDoubleTap: () {
+                  if()
+                },
+                child: AllExpensesItem(expensesModel: item, isActive: null,)),
             ),
           );
          } else { 
-          return Expanded(child: AllExpensesItem(expensesModel: item)); 
+          return Expanded(child: AllExpensesItem(expensesModel: item, isActive: null,)); 
          }
       }).toList()
          
