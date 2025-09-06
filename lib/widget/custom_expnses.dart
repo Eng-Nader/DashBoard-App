@@ -1,6 +1,3 @@
-import 'package:dashboarda_app/models/expenses_model.dart';
-import 'package:dashboarda_app/utils/app_images.dart';
-import 'package:dashboarda_app/widget/all_expenses_item.dart';
 import 'package:dashboarda_app/widget/all_expenses_item_list_view.dart';
 import 'package:dashboarda_app/widget/custom_back_ground_container.dart';
 import 'package:dashboarda_app/widget/expnses_header.dart';
@@ -12,6 +9,7 @@ class CustomExpnses extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CustomBackGroundContainer(
+      paddingValue: 20,
       child: Column(
         children: [
           ExpensesHeader(),
@@ -24,4 +22,3 @@ class CustomExpnses extends StatelessWidget {
     );
   }
 }
-
