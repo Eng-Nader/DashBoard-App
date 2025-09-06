@@ -7,7 +7,8 @@ class AllExpensesItemListView extends StatefulWidget {
   const AllExpensesItemListView({super.key});
 
   @override
-  State<AllExpensesItemListView> createState() => _AllExpensesItemListViewState();
+  State<AllExpensesItemListView> createState() =>
+      _AllExpensesItemListViewState();
 }
 
 class _AllExpensesItemListViewState extends State<AllExpensesItemListView> {
@@ -31,30 +32,31 @@ class _AllExpensesItemListViewState extends State<AllExpensesItemListView> {
       title: 'Expenses',
     ),
   ];
-   int currntIndex = 0 ; 
+  int currntIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: expensesList.asMap().entries.map((e){ 
-         int index = e.key ; 
-         ExpensesModel  item = e.value ; 
-         if (index == 1 ){ 
-          return Expanded(
-            child: Padding(
-              padding:  const EdgeInsets.symmetric(horizontal: 12),
-              child: GestureDetector(
-                onDoubleTap: () {
-                  if()
-                },
-                child: AllExpensesItem(expensesModel: item, isActive: null,)),
+        children: expensesList.asMap().entries.map((e) {
+      int index = e.key;
+      ExpensesModel item = e.value;
+      if (index == 1) {
+        return Expanded(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            child: AllExpensesItem(
+              expensesModel: item,
+              isActive: true,
             ),
-          );
-         } else { 
-          return Expanded(child: AllExpensesItem(expensesModel: item, isActive: null,)); 
-         }
-      }).toList()
-         
-    );
+          ),
+        );
+      } else {
+        return Expanded(
+            child: AllExpensesItem(
+          expensesModel: item,
+          isActive: true,
+        ));
+      }
+    }).toList());
   }
 }

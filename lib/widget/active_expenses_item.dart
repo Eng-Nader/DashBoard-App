@@ -3,7 +3,6 @@ import 'package:dashboarda_app/utils/app_style.dart';
 import 'package:dashboarda_app/widget/expenses_item_header.dart';
 import 'package:flutter/material.dart';
 
-
 class ActiveAllExpensesItem extends StatelessWidget {
   const ActiveAllExpensesItem({
     super.key,
@@ -26,7 +25,10 @@ class ActiveAllExpensesItem extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ExpensesItemHeader(
+                backGroundColor: Colors.white10,
+                imageColor: Colors.white,
                 image: expensesModel.image,
+                iconColor: Colors.white,
               ),
               const SizedBox(
                 height: 34,
@@ -49,12 +51,10 @@ class ActiveAllExpensesItem extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              Text(
-                expensesModel.price,
-                style: AppStyle.styleSemibold24.copyWith(
-                  color: Colors.white,
-                ),
-              )
+              Text(expensesModel.price,
+                  style: AppStyle.styleSemibold24.copyWith(
+                    color: Colors.white,
+                  ))
             ],
           ),
         ));
