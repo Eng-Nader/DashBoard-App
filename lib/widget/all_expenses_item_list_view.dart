@@ -42,21 +42,39 @@ class _AllExpensesItemListViewState extends State<AllExpensesItemListView> {
       ExpensesModel item = e.value;
       if (index == 1) {
         return Expanded(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12),
-            child: AllExpensesItem(
-              expensesModel: item,
-              isActive: true,
+          child: GestureDetector(
+            onTap: () {
+              upDateIndex(index);
+            },
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: AllExpensesItem(
+                expensesModel: item,
+                isActive: currntIndex == index,
+              ),
             ),
           ),
         );
       } else {
         return Expanded(
-            child: AllExpensesItem(
-          expensesModel: item,
-          isActive: true,
+            child: GestureDetector(
+          onTap: () {
+            upDateIndex(index);
+          },
+          child: AllExpensesItem(
+            expensesModel: item,
+            isActive: currntIndex == index,
+          ),
         ));
       }
     }).toList());
+  }
+
+  void upDateIndex(int index) {
+    if (currntIndex != index) {
+      setState(() {
+        currntIndex = index;
+      });
+    }
   }
 }
