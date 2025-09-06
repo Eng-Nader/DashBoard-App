@@ -22,6 +22,7 @@ class CustomExpnses extends StatelessWidget {
           SizedBox(
             height: 16,
           ),
+          AllExpensesItemListView(),
         ],
       ),
     );

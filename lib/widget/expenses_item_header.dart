@@ -27,7 +27,7 @@ class ExpensesItemHeader extends StatelessWidget {
           angle: 3.14159,
           child: const Icon(
             Icons.arrow_back_ios,
-            color: Colors.black,
+            color: Colors.white,
           ),
         ),
       ],
