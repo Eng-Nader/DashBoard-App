@@ -11,15 +11,20 @@ class DarwarItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return isActive
-        ? ActiveDarwarItem(
-            darwarItemModel: darwarItemModel,
-          )
-        : InActiveDarwarItem(
-            darwarItemModel: darwarItemModel,
-          );
+    return AnimatedCrossFade(
+      firstChild: ActiveDarwarItem(darwarItemModel: darwarItemModel),
+      secondChild: InActiveDarwarItem(darwarItemModel: darwarItemModel),
+      crossFadeState:
+          isActive ? CrossFadeState.showFirst : CrossFadeState.showSecond,
+      duration: const Duration(milliseconds: 350),
+    );
+    //todo add animation to Active drawer item
+    //  isActive
+    //     ? ActiveDarwarItem(
+    //         darwarItemModel: darwarItemModel,
+    //       )
+    //     : InActiveDarwarItem(
+    //         darwarItemModel: darwarItemModel,
+    //       );
   }
 }
-
-
-
