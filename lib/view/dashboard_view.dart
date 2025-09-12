@@ -1,5 +1,6 @@
 import 'package:dashboarda_app/widget/desktop_layout.dart';
 import 'package:dashboarda_app/widget/adaptive_layout.dart';
+import 'package:dashboarda_app/widget/payment_process.dart';
 import 'package:flutter/material.dart';
 
 class DashboardView extends StatelessWidget {
@@ -10,7 +11,7 @@ class DashboardView extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xffF7F9FA),
       body: AdaptiveLayout(
-        moibleLayout: (context) => const SizedBox(),
+        moibleLayout: (context) => const PaymentProcess(),
         tabletlayout: (context) => const SizedBox(),
         dektopLayout: (context) => const DesptopLayout(),
       ),

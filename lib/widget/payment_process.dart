@@ -18,7 +18,7 @@ class _PaymentProcessState extends State<PaymentProcess> {
   void initState() {
     pageController = PageController();
     pageController.addListener(() {
-      indexPage = pageController.page!.toInt();
+      indexPage = pageController.page!.round();
       setState(() {});
     });
 
