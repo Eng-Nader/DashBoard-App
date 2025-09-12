@@ -1,5 +1,6 @@
 import 'package:dashboarda_app/widget/custom_back_ground_container.dart';
 import 'package:dashboarda_app/widget/latest_transaction_section.dart';
+import 'package:dashboarda_app/widget/quick_invoice_form.dart';
 import 'package:dashboarda_app/widget/quick_invoice_header.dart';
 import 'package:dashboarda_app/widget/title_text_fild.dart';
 import 'package:flutter/material.dart';
@@ -19,10 +20,7 @@ class QuickInvoice extends StatelessWidget {
           Divider(
             height: 48,
           ),
-          TitleTextFild(
-            title: 'Customr Name',
-            hintText: 'Type your Name',
-          ),
+          QutikInvoiceForm()
         ],
       ),
     );
