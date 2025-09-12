@@ -1,4 +1,5 @@
 import 'package:dashboarda_app/models/darwar_item_model.dart';
+import 'package:dashboarda_app/models/transation_model.dart';
 import 'package:dashboarda_app/utils/app_images.dart';
 import 'package:dashboarda_app/widget/custom_user_info.dart';
 import 'package:dashboarda_app/widget/darwar_item_view.dart';
@@ -18,9 +19,8 @@ class CustomDrawar extends StatelessWidget {
         slivers: [
           SliverToBoxAdapter(
             child: CustomUserInfo(
-              title: 'Lekan Okeowo',
-              subtitle: 'demo@gmail.com',
-              image: AppImage.imagesMoonLightDark,
+              listTileModel: ListTileModel('AppImage.imagesMoonLightDark',
+                  'demo@gmail.com', 'Lekan Okeowo'),
             ),
           ),
           SliverToBoxAdapter(

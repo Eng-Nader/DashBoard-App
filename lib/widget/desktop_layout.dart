@@ -25,6 +25,9 @@ class DesptopLayout extends StatelessWidget {
             child: Column(
               children: [
                 CustomExpnses(),
+                SizedBox(
+                  height: 24,
+                ),
                 QuickInvoice(),
               ],
             ),
