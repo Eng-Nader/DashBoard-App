@@ -1,3 +1,4 @@
+import 'package:dashboarda_app/core/utils/app_images.dart';
 import 'package:dashboarda_app/core/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
@@ -17,9 +18,12 @@ class MyCard extends StatelessWidget {
           height: 24,
         ),
         AspectRatio(
-          aspectRatio: 420 / (242 - 19 + 8),
+          aspectRatio: 420 / 215,
           child: Container(
             decoration: BoxDecoration(
+              image: const DecorationImage(
+                image: AssetImage(AppImage.imageBackGraoudPaymet),
+              ),
               borderRadius: BorderRadius.circular(12),
               color: Colors.blue,
             ),

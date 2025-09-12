@@ -1,6 +1,7 @@
+// ignore_for_file: prefer_single_quotes
 class AppImage {
   AppImage._();
-
+  
   static const String imagesBalance = "assets/images/balance.svg";
 
   static const String imagesCard = "assets/images/card.svg";
@@ -15,9 +16,13 @@ class AppImage {
 
   static const String imagesLogout = "assets/images/logout.svg";
 
+  static const String imagesMoonDarkLight = "assets/images/moonDarkLight.svg";
+
   static const String imagesMoondark = "assets/images/moondark.svg";
 
   static const String imagesMoonlight = "assets/images/moonlight.svg";
+
+  static const String imagesPaymentBackground = "assets/images/payment_background.png";
 
   static const String imagesSetting = "assets/images/setting.svg";
 
@@ -26,8 +31,5 @@ class AppImage {
   static const String imagesTransaction = "assets/images/transaction.svg";
 
   static const String imagesWallet = "assets/images/wallet.svg";
-
-  static const String imagesMoonLightDark = "assets/images/moonDarkLight.svg";
-  static const String imageBackGraoudPaymet =
-      "assets/images/payment_background.png";
 }
+
