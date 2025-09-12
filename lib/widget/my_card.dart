@@ -13,6 +13,7 @@ class MyCard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           image: const DecorationImage(
+            fit: BoxFit.fill,
             image: AssetImage(AppImage.imageBackGraoudPaymet),
           ),
           borderRadius: BorderRadius.circular(12),
@@ -30,7 +31,7 @@ class MyCard extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-                subtitle: const Text( 
+                subtitle: const Text(
                   'Syah Bandi',
                   style: AppStyle.styleMedium20,
                 ),
@@ -63,4 +64,3 @@ class MyCard extends StatelessWidget {
     );
   }
 }
-
