@@ -1,9 +1,7 @@
-import 'package:dashboarda_app/core/utils/app_images.dart';
 import 'package:dashboarda_app/core/utils/app_style.dart';
 import 'package:dashboarda_app/widget/dot_indectaor.dart';
 import 'package:dashboarda_app/widget/my_card.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 class PaymentProcess extends StatelessWidget {
   const PaymentProcess({super.key});

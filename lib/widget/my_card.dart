@@ -3,7 +3,7 @@ import 'package:dashboarda_app/core/utils/app_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class MyCard extends StatelessWidget{
+class MyCard extends StatelessWidget {
   const MyCard({super.key});
 
   @override
@@ -63,3 +63,4 @@ class MyCard extends StatelessWidget{
     );
   }
 }
+
