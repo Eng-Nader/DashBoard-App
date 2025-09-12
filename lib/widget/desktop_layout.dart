@@ -1,5 +1,7 @@
+import 'package:dashboarda_app/widget/admin_payment.dart';
 import 'package:dashboarda_app/widget/custom_drawar.dart';
 import 'package:dashboarda_app/widget/custom_expnses.dart';
+import 'package:dashboarda_app/widget/my_card.dart';
 import 'package:dashboarda_app/widget/quick_invoice.dart';
 import 'package:dashboarda_app/widget/quick_invoice_and_expenses.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +22,12 @@ class DesptopLayout extends StatelessWidget {
         Expanded(
           flex: 2,
           child: AllExpensesAndQuickInvoiceSection(),
+        ),
+        SizedBox(
+          width: 24,
+        ),
+        Expanded(
+          child: AdminPaymnet(),
         ),
       ],
     );
