@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class CardPageView extends StatelessWidget {
   const CardPageView({super.key, required this.pageController});
-  final PageController pageController ; 
+  final PageController pageController;
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,10 @@ class CardPageView extends StatelessWidget {
       children: List.generate(
         3,
         (index) {
-          return const MyCard();
+          return const Padding(
+            padding: EdgeInsets.only(right: 16),
+            child: MyCard(),
+          );
         },
       ),
     );
