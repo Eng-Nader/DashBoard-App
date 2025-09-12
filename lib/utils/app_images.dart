@@ -30,6 +30,8 @@ class AppImage {
 
   static const String imagesTransaction = "assets/images/transaction.svg";
 
+  static const String imagesVector = "assets/images/Vector.svg";
+
   static const String imagesWallet = "assets/images/wallet.svg";
 }
 

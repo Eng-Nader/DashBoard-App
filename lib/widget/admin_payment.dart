@@ -1,5 +1,5 @@
 import 'package:dashboarda_app/widget/custom_back_ground_container.dart';
-import 'package:dashboarda_app/widget/my_card.dart';
+import 'package:dashboarda_app/widget/payment_process.dart';
 import 'package:flutter/material.dart';
 
 class AdminPaymnet extends StatelessWidget {
@@ -11,7 +11,7 @@ class AdminPaymnet extends StatelessWidget {
       paddingValue: 20,
       child: Column(
         children: [
-          MyCard(),
+          PaymentProcess(),
         ],
       ),
     );

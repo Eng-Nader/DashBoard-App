@@ -2,6 +2,7 @@ class AppImage {
   AppImage._();
 
   static const String imagesBalance = "assets/images/balance.svg";
+  static const String imageVector = "assets/images/Vector.svg";
 
   static const String imagesCard = "assets/images/card.svg";
 
