@@ -19,7 +19,10 @@ class QuickInvoice extends StatelessWidget {
           Divider(
             height: 48,
           ),
-          TitleTextFild(),
+          TitleTextFild(
+            title: 'Customr Name',
+            hintText: 'Type your Name',
+          ),
         ],
       ),
     );
