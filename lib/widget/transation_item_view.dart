@@ -28,19 +28,34 @@ class TransationItemView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 80,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemCount: transationList.length,
-        itemBuilder: (context, index) {
-          return IntrinsicWidth(
-            child: CustomUserInfo(
-              listTileModel: transationList[index],
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: [
+          ...transationList.map(
+            (item) => IntrinsicWidth(
+              child: CustomUserInfo(listTileModel: item),
             ),
-          );
-        },
+          ),
+        ],
       ),
     );
   }
 }
+
+
+    //todo this Soultion to solve problem in listView horizontal
+    //  SizedBox(
+    //   height: 80,
+    //   child: ListView.builder(
+    //     scrollDirection: Axis.horizontal,
+    //     itemCount: transationList.length,
+    //     itemBuilder: (context, index) {
+    //       return IntrinsicWidth(
+    //         child: CustomUserInfo(
+    //           listTileModel: transationList[index],
+    //         ),
+    //       );
+    //     },
+    //   ),
+    // );
