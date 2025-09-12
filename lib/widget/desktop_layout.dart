@@ -10,30 +10,27 @@ class DesptopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(top: 40),
-      child: Row(
-        children: [
-          Expanded(
-            child: CustomDrawar(),
+    return const Row(
+      children: [
+        Expanded(
+          child: CustomDrawar(),
+        ),
+        SizedBox(
+          width: 30,
+        ),
+        Expanded(
+          flex: 2,
+          child: Column(
+            children: [
+              CustomExpnses(),
+              SizedBox(
+                height: 24,
+              ),
+              Flexible(child: QuickInvoice()),
+            ],
           ),
-          SizedBox(
-            width: 30,
-          ),
-          Expanded(
-            flex: 2,
-            child: Column(
-              children: [
-                CustomExpnses(),
-                SizedBox(
-                  height: 24,
-                ),
-                Flexible(child: QuickInvoice()),
-              ],
-            ),
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
