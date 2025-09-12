@@ -1,3 +1,6 @@
+import 'package:dashboarda_app/core/function/build_border.dart';
+import 'package:dashboarda_app/core/utils/app_style.dart';
+import 'package:dashboarda_app/widget/custom_text_fild.dart';
 import 'package:flutter/material.dart';
 
 class TitleTextFild extends StatelessWidget {
@@ -5,24 +8,18 @@ class TitleTextFild extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
-      decoration: InputDecoration(
-        fillColor: const Color(0xffFAFAFA),
-        filled: true,
-        border: const OutlineInputBorder(
-          borderSide: BorderSide(
-            color: Color(0xffFAFAFA),
-          ),
+    return const Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Customer name',
+          style: AppStyle.styleMedium16,
         ),
-        focusedBorder: buildBorder(),
-        enabledBorder: buildBorder(),
-      ),
-    );
-  }
-
-  OutlineInputBorder buildBorder() {
-    return const OutlineInputBorder(
-      borderSide: BorderSide(color: Colors.transparent),
+        SizedBox(
+          height: 32,
+        ),
+        CustomTextFild(),
+      ],
     );
   }
 }

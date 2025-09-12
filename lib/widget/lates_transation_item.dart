@@ -1,5 +1,5 @@
 import 'package:dashboarda_app/models/transation_model.dart';
-import 'package:dashboarda_app/utils/app_style.dart';
+import 'package:dashboarda_app/core/utils/app_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
