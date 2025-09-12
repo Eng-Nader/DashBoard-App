@@ -1,5 +1,4 @@
 import 'package:dashboarda_app/utils/app_style.dart';
-import 'package:dashboarda_app/widget/lates_transation_item.dart';
 import 'package:dashboarda_app/widget/transation_item_view.dart';
 import 'package:flutter/material.dart';
 

@@ -1,8 +1,6 @@
 import 'package:dashboarda_app/models/transation_model.dart';
 import 'package:dashboarda_app/utils/app_images.dart';
 import 'package:dashboarda_app/widget/custom_user_info.dart';
-import 'package:dashboarda_app/widget/lates_transation_item.dart';
-import 'package:dashboarda_app/widget/latest_transaction_section.dart';
 import 'package:flutter/material.dart';
 
 class TransationItemView extends StatelessWidget {
