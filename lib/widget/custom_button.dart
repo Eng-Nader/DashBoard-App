@@ -10,16 +10,21 @@ class CustomButton extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Expanded(
-          child: TextButton(
-            style: TextButton.styleFrom(
-              backgroundColor: Colors.transparent,
-              minimumSize: const Size(262, 62),
-            ),
-            onPressed: () {},
-            child: Text(
-              'Add more details',
-              style: AppStyle.styleSemibold18.copyWith(
-                color: const Color(0xff4EB7F2),
+          child: SizedBox(
+            height: 62,
+            child: TextButton(
+              style: TextButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                backgroundColor: Colors.transparent,
+              ),
+              onPressed: () {},
+              child: Text(
+                'Add more details',
+                style: AppStyle.styleSemibold18.copyWith(
+                  color: const Color(0xff4EB7F2),
+                ),
               ),
             ),
           ),
@@ -28,15 +33,20 @@ class CustomButton extends StatelessWidget {
           width: 24,
         ),
         Expanded(
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xff4EB7F2),
-              minimumSize: const Size(262, 62),
-            ),
-            onPressed: () {},
-            child: const Text(
-              'Send Money',
-              style: AppStyle.styleSemibold18,
+          child: SizedBox(
+            height: 62,
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                backgroundColor: const Color(0xff4EB7F2),
+              ),
+              onPressed: () {},
+              child: const Text(
+                'Send Money',
+                style: AppStyle.styleSemibold18,
+              ),
             ),
           ),
         ),
