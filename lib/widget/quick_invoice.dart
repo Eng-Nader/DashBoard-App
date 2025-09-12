@@ -2,7 +2,6 @@ import 'package:dashboarda_app/widget/custom_back_ground_container.dart';
 import 'package:dashboarda_app/widget/latest_transaction_section.dart';
 import 'package:dashboarda_app/widget/quick_invoice_form.dart';
 import 'package:dashboarda_app/widget/quick_invoice_header.dart';
-import 'package:dashboarda_app/widget/title_text_fild.dart';
 import 'package:flutter/material.dart';
 
 class QuickInvoice extends StatelessWidget {
@@ -12,15 +11,21 @@ class QuickInvoice extends StatelessWidget {
   Widget build(BuildContext context) {
     return const CustomBackGroundContainer(
       paddingValue: 20,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          QuickInvoiceHeader(),
-          LatesTransactionSection(),
-          Divider(
-            height: 48,
+      child: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                QuickInvoiceHeader(),
+                LatesTransactionSection(),
+                Divider(
+                  height: 48,
+                ),
+                QutikInvoiceForm()
+              ],
+            ),
           ),
-          QutikInvoiceForm()
         ],
       ),
     );

@@ -1,3 +1,4 @@
+import 'package:dashboarda_app/widget/custom_button.dart';
 import 'package:dashboarda_app/widget/title_text_fild.dart';
 import 'package:flutter/material.dart';
 
@@ -49,6 +50,10 @@ class QutikInvoiceForm extends StatelessWidget {
             ),
           ],
         ),
+        SizedBox(
+          height: 24,
+        ),
+        CustomButton(),
       ],
     );
   }
