@@ -19,8 +19,11 @@ class CustomDrawar extends StatelessWidget {
         slivers: [
           SliverToBoxAdapter(
             child: CustomUserInfo(
-              listTileModel: ListTileModel('AppImage.imagesMoonLightDark',
-                  'demo@gmail.com', 'Lekan Okeowo'),
+              listTileModel: ListTileModel(
+                AppImage.imagesMoonLightDark,
+                'demo@gmail.com',
+                'Lekan Okeowo',
+              ),
             ),
           ),
           SliverToBoxAdapter(
