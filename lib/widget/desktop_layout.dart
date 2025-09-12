@@ -28,7 +28,7 @@ class DesptopLayout extends StatelessWidget {
                 SizedBox(
                   height: 24,
                 ),
-                QuickInvoice(),
+                Flexible(child: QuickInvoice()),
               ],
             ),
           ),

@@ -5,27 +5,29 @@ import 'package:flutter_svg/svg.dart';
 
 class CustomUserInfo extends StatelessWidget {
   const CustomUserInfo({
-    super.key, required this.listTileModel,
-    
+    super.key,
+    required this.listTileModel,
   });
-  final ListTileModel listTileModel ; 
+  final ListTileModel listTileModel;
 
   @override
   Widget build(BuildContext context) {
     return Card(
       elevation: 0,
       color: const Color(0xffFAFAFA),
-      child: ListTile(
-        title: Text(
-          listTileModel.title,
-          style: AppStyle.styleSemibold16,
-        ),
-        subtitle: Text(
-          listTileModel.subTitle,
-          style: AppStyle.styleRegulard12,
-        ),
-        leading: SvgPicture.asset(
-          listTileModel.image,
+      child: Center(
+        child: ListTile(
+          title: Text(
+            listTileModel.title,
+            style: AppStyle.styleSemibold16,
+          ),
+          subtitle: Text(
+            listTileModel.subTitle,
+            style: AppStyle.styleRegulard12,
+          ),
+          leading: SvgPicture.asset(
+            listTileModel.image,
+          ),
         ),
       ),
     );
