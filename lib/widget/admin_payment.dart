@@ -1,5 +1,6 @@
 import 'package:dashboarda_app/widget/custom_back_ground_container.dart';
 import 'package:dashboarda_app/widget/payment_process.dart';
+import 'package:dashboarda_app/widget/transation_history.dart';
 import 'package:flutter/material.dart';
 
 class AdminPaymnet extends StatelessWidget {
@@ -12,6 +13,14 @@ class AdminPaymnet extends StatelessWidget {
       child: Column(
         children: [
           PaymentProcess(),
+          SizedBox(
+            height: 10,
+          ),
+          Divider(),
+          SizedBox(
+            height: 10,
+          ),
+          TransactionHistory(),
         ],
       ),
     );
