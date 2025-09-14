@@ -4,15 +4,17 @@ import 'package:flutter/material.dart';
 class RangeOption extends StatelessWidget {
   const RangeOption({
     super.key,
+    required this.text,
   });
+  final String text;
 
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        const Text(
-          'All Expenses',
+        Text(
+          text,
           style: AppStyle.styleSemibold20,
         ),
         Card(

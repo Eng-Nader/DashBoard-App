@@ -1,4 +1,5 @@
 import 'package:dashboarda_app/widget/custom_back_ground_container.dart';
+import 'package:dashboarda_app/widget/range_option.dart';
 import 'package:flutter/material.dart';
 
 class IncomeChart extends StatelessWidget {
@@ -7,6 +8,17 @@ class IncomeChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CustomBackGroundContainer(
-        paddingValue: 20, child: Text('flutter demo'));
+      paddingValue: 20,
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            RangeOption(
+              text: 'Income',
+            ),
+            
+          ],
+        ),
+      ),
+    );
   }
 }
