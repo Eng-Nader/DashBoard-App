@@ -2,6 +2,7 @@ import 'package:dashboarda_app/widget/admin_payment.dart';
 import 'package:dashboarda_app/widget/custom_back_ground_container.dart';
 import 'package:dashboarda_app/widget/custom_drawar.dart';
 import 'package:dashboarda_app/widget/income_char.dart';
+import 'package:dashboarda_app/widget/income_chart_item.dart';
 import 'package:dashboarda_app/widget/quick_invoice_and_expenses.dart';
 import 'package:flutter/material.dart';
 
@@ -27,13 +28,7 @@ class DesptopLayout extends StatelessWidget {
         ),
         Expanded(
           child: Column(
-            children: [
-              AdminPaymnet(),
-              SizedBox(
-                height: 20,
-              ),
-              IncomeChart(),
-            ],
+            children: [Expanded(child: IncomeChartItem())],
           ),
         ),
       ],
