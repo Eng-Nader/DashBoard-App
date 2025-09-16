@@ -1,7 +1,6 @@
 import 'package:dashboarda_app/core/utils/app_style.dart';
 import 'package:dashboarda_app/widget/card_page_view.dart';
 import 'package:dashboarda_app/widget/dot_indectaor.dart';
-import 'package:dashboarda_app/widget/my_card.dart';
 import 'package:flutter/material.dart';
 
 class PaymentProcess extends StatefulWidget {

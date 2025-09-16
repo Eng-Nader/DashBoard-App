@@ -1,6 +1,5 @@
 import 'package:dashboarda_app/widget/desktop_layout.dart';
 import 'package:dashboarda_app/widget/adaptive_layout.dart';
-import 'package:dashboarda_app/widget/payment_process.dart';
 import 'package:flutter/material.dart';
 
 class DashboardView extends StatelessWidget {
