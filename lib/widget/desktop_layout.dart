@@ -31,7 +31,7 @@ class DesptopLayout extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              IncomeChart()
+              IncomeChart(),
             ],
           ),
         ),
