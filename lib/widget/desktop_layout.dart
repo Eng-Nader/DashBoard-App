@@ -29,12 +29,14 @@ class DesptopLayout extends StatelessWidget {
             children: [
               AdminPaymnet(),
               SizedBox(
-                height: 20,
+                height: 16,
               ),
-              IncomeChart(),
+              Expanded(
+                child: IncomeChart(),
+              ),
             ],
           ),
-        ),
+        )
       ],
     );
   }

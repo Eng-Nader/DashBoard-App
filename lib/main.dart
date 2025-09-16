@@ -1,13 +1,13 @@
 import 'package:dashboarda_app/view/dashboard_view.dart';
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    //  DevicePreview(
-    //  enabled: true,
-    //  builder: (context) => const
-    const DashBoardApp(),
-    //   ),
+    DevicePreview(
+      enabled: true,
+      builder: (context) => const DashBoardApp(),
+    ),
   );
 }
 
@@ -16,11 +16,11 @@ class DashBoardApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      // locale: DevicePreview.locale(context),
-      // builder: DevicePreview.appBuilder,
-      home: Scaffold(
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
+      home: const Scaffold(
         body: DashboardView(),
       ),
     );

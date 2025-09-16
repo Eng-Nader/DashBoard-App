@@ -18,29 +18,32 @@ class _IncomeChartItemState extends State<IncomeChartItem> {
   int currentIndex = -1;
   @override
   Widget build(BuildContext context) {
-    return PieChart(
-      PieChartData(
-        pieTouchData: PieTouchData(
-          enabled: true,
-          touchCallback: (p0, touchResponse) {
-            currentIndex =
-                touchResponse?.touchedSection?.touchedSectionIndex ?? -1;
-            setState(() {});
-          },
-        ),
-        sectionsSpace: 0,
-        sections: [
-          ...List.generate(
-            colorList.length,
-            (index) {
-              return PieChartSectionData(
-                color: colorList[index],
-                showTitle: false,
-                radius: currentIndex == index ? 60 : 50,
-              );
+    return AspectRatio(
+      aspectRatio: 1,
+      child: PieChart(
+        PieChartData(
+          pieTouchData: PieTouchData(
+            enabled: true,
+            touchCallback: (p0, touchResponse) {
+              currentIndex =
+                  touchResponse?.touchedSection?.touchedSectionIndex ?? -1;
+              setState(() {});
             },
-          )
-        ],
+          ),
+          sectionsSpace: 0,
+          sections: [
+            ...List.generate(
+              colorList.length,
+              (index) {
+                return PieChartSectionData(
+                  color: colorList[index],
+                  showTitle: false,
+                  radius: currentIndex == index ? 60 : 50,
+                );
+              },
+            )
+          ],
+        ),
       ),
     );
   }
