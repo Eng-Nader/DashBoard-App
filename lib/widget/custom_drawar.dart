@@ -12,6 +12,7 @@ class CustomDrawar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.of(context).size.width * .7,
       decoration: const BoxDecoration(
         color: Colors.white,
       ),
