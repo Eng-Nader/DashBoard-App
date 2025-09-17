@@ -32,7 +32,12 @@ class DesptopLayout extends StatelessWidget {
                 height: 16,
               ),
               Expanded(
-                child: IncomeChart(),
+                child: SingleChildScrollView(
+                  child: SizedBox(
+                    height: 500,
+                    child: IncomeChart(),
+                  ),
+                ),
               ),
             ],
           ),
