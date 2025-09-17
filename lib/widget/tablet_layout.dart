@@ -19,7 +19,11 @@ class TabletLayout extends StatelessWidget {
           Expanded(
             flex: 3,
             child: AllExpensesAndQuickInvoiceSection(),
-          )
+          ),
+          SizedBox(
+            width: 20,
+          ) , 
+      
         ],
       ),
     );
