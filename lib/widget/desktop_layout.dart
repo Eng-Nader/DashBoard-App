@@ -18,22 +18,36 @@ class DesptopLayout extends StatelessWidget {
           width: 30,
         ),
         Expanded(
-          flex: 2,
-          child: AllExpensesAndQuickInvoiceSection(),
-        ),
-        SizedBox(
-          width: 24,
-        ),
-        Expanded(
-          child: Column(
-            children: [
-              AdminPaymnet(),
-              SizedBox(
-                height: 16,
-              ),
-              Expanded(
-                child: IncomeChart(),
-              ),
+          flex: 3,
+          child: CustomScrollView(
+            slivers: [
+              SliverFillRemaining(
+                hasScrollBody: false,
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 2,
+                      child: AllExpensesAndQuickInvoiceSection(),
+                    ),
+                    SizedBox(
+                      width: 24,
+                    ),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          AdminPaymnet(),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          Expanded(
+                            child: IncomeChart(),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         )

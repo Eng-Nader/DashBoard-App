@@ -29,14 +29,14 @@ class IncomeChatDetails extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      itemCount: incomechartList.length,
-      itemBuilder: (context, index) {
-        return IncomeChartDetailsItem(
+    return Column(
+      children: [
+        ...List.generate(incomechartList.length, (index){ 
+          return IncomeChartDetailsItem(
           incomeChartModel: incomechartList[index],
         );
-      },
-    );
+        })
+      ],
+    ); 
   }
 }
