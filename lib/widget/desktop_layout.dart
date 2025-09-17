@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:dashboarda_app/widget/admin_payment.dart';
 import 'package:dashboarda_app/widget/custom_drawar.dart';
 import 'package:dashboarda_app/widget/income_char.dart';
@@ -9,6 +11,7 @@ class DesptopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    log(MediaQuery.sizeOf(context).width.toString());
     return const Row(
       children: [
         Expanded(

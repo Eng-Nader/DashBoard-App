@@ -4,10 +4,11 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    DevicePreview(
-      enabled: true,
-      builder: (context) => const DashBoardApp(),
-    ),
+    // DevicePreview(
+    //   enabled: true,
+    // builder: (context) =>
+    const DashBoardApp(),
+    // ),
   );
 }
 
