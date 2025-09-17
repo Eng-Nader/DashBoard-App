@@ -11,21 +11,15 @@ class QuickInvoice extends StatelessWidget {
   Widget build(BuildContext context) {
     return const CustomBackGroundContainer(
       paddingValue: 20,
-      child: CustomScrollView(
-        slivers: [
-          SliverToBoxAdapter(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                QuickInvoiceHeader(),
-                LatesTransactionSection(),
-                Divider(
-                  height: 48,
-                ),
-                QutikInvoiceForm()
-              ],
-            ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          QuickInvoiceHeader(),
+          LatesTransactionSection(),
+          Divider(
+            height: 48,
           ),
+          QutikInvoiceForm()
         ],
       ),
     );

@@ -14,18 +14,16 @@ class IncomeChart extends StatelessWidget {
       child: Column(
         children: [
           RangeOption(text: 'Income'),
-          Expanded(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                  child: IncomeChartItem(),
-                ),
-                Expanded(
-                  child: IncomeChatDetails(),
-                ),
-              ],
-            ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: IncomeChartItem(),
+              ),
+              Expanded(
+                child: IncomeChatDetails(),
+              ),
+            ],
           )
         ],
       ),
