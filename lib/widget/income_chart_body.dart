@@ -1,3 +1,5 @@
+import 'package:dashboarda_app/utils/size_config.dart';
+import 'package:dashboarda_app/widget/detailed_income_chat.dart';
 import 'package:dashboarda_app/widget/income_chart_item.dart';
 import 'package:dashboarda_app/widget/income_chat_details.dart';
 import 'package:flutter/material.dart';
@@ -10,9 +12,11 @@ class IncomeChartBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
-    print(width);
-    return width > 1200 && width < 1800
-        ? const SizedBox()
+
+    return width > SizeConfig.desktop && width < 1800
+        ? const Expanded(
+            child: DetailedIncomeChat(),
+          )
         : const Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

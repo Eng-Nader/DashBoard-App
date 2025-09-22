@@ -10,7 +10,6 @@ class DesptopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    log(MediaQuery.sizeOf(context).width.toString());
     return const Row(
       children: [
         Expanded(
