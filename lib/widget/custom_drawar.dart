@@ -12,7 +12,7 @@ class CustomDrawar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width * .7,
+      width: MediaQuery.sizeOf(context).width * .7,
       decoration: const BoxDecoration(
         color: Colors.white,
       ),
@@ -44,11 +44,15 @@ class CustomDrawar extends StatelessWidget {
                 ),
                 InActiveDarwarItem(
                   darwarItemModel: DarwarItemModel(
-                      image: AppImage.imagesSetting, title: 'Setting system'),
+                    image: AppImage.imagesSetting,
+                    title: 'Setting system',
+                  ),
                 ),
                 InActiveDarwarItem(
                   darwarItemModel: DarwarItemModel(
-                      image: AppImage.imagesLogout, title: 'Logout account'),
+                    image: AppImage.imagesLogout,
+                    title: 'Logout account',
+                  ),
                 ),
                 SizedBox(
                   height: 48,

@@ -1,4 +1,5 @@
 import 'package:dashboarda_app/widget/custom_back_ground_container.dart';
+import 'package:dashboarda_app/widget/income_chart_body.dart';
 import 'package:dashboarda_app/widget/income_chart_item.dart';
 import 'package:dashboarda_app/widget/income_chat_details.dart';
 import 'package:dashboarda_app/widget/range_option.dart';
@@ -14,17 +15,7 @@ class IncomeChart extends StatelessWidget {
       child: Column(
         children: [
           RangeOption(text: 'Income'),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                child: IncomeChartItem(),
-              ),
-              Expanded(
-                child: IncomeChatDetails(),
-              ),
-            ],
-          )
+          IncomeChartBody(),
         ],
       ),
     );

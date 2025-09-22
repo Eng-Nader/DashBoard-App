@@ -31,12 +31,15 @@ class IncomeChatDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ...List.generate(incomechartList.length, (index){ 
-          return IncomeChartDetailsItem(
-          incomeChartModel: incomechartList[index],
-        );
-        })
+        ...List.generate(
+          incomechartList.length,
+          (index) {
+            return IncomeChartDetailsItem(
+              incomeChartModel: incomechartList[index],
+            );
+          },
+        )
       ],
-    ); 
+    );
   }
 }
