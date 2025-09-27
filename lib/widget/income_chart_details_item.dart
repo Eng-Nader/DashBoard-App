@@ -21,7 +21,7 @@ class IncomeChartDetailsItem extends StatelessWidget {
         style: AppStyle.styleRegular16,
       ),
       trailing: Text(
-        incomeChartModel.present,
+        incomeChartModel.present.toString(),
         style: AppStyle.styleMedium16,
       ),
     );

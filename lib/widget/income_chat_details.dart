@@ -9,22 +9,22 @@ class IncomeChatDetails extends StatelessWidget {
     IncomeChartModel(
       Color(0xff208CC8),
       'Design service',
-      '40%',
+      40,
     ),
     IncomeChartModel(
       Color(0xff4EB7F2),
       'Design product',
-      '25%',
+      25,
     ),
     IncomeChartModel(
       Color(0xff064061),
       'Product royalti',
-      '20%',
+      20,
     ),
     IncomeChartModel(
       Color(0xffE2DECD),
       'Other',
-      '22%',
+      22,
     ),
   ];
   @override
