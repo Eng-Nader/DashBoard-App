@@ -29,7 +29,7 @@ class _PaymentProcessState extends State<PaymentProcess> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
+          Text(
           'My card',
           style: AppStyle.styleSemibold20,
         ),

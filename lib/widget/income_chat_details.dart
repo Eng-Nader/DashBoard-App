@@ -1,6 +1,5 @@
 import 'package:dashboarda_app/models/income_chart_model.dart';
 import 'package:dashboarda_app/widget/income_chart_details_item.dart';
-import 'package:dashboarda_app/widget/income_chart_item.dart';
 import 'package:flutter/material.dart';
 
 class IncomeChatDetails extends StatelessWidget {

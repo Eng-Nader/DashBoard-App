@@ -43,7 +43,7 @@ class CustomButton extends StatelessWidget {
                 backgroundColor: const Color(0xff4EB7F2),
               ),
               onPressed: () {},
-              child: const Text(
+              child:   Text(
                 'Send Money',
                 style: AppStyle.styleSemibold18,
               ),

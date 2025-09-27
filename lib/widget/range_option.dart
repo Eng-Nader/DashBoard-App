@@ -34,7 +34,7 @@ class RangeOption extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                const Text(
+                  Text(
                   'Monthly',
                   style: AppStyle.styleMedium16,
                 ),

@@ -66,7 +66,7 @@ class _DetailedIncomeChat extends State<DetailedIncomeChat> {
                   showTitle: true,
                   radius: currentIndex == index ? 60 : 50,
                   titlePositionPercentageOffset:
-                      currentIndex == index ? 1.5 : null,
+                      currentIndex == index ? 1.3 : null,
                 );
               },
             )

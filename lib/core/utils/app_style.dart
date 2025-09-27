@@ -1,64 +1,91 @@
+import 'dart:developer';
+import 'dart:ui';
+
+import 'package:dashboarda_app/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 abstract class AppStyle {
-  static const TextStyle styleRegular16 = TextStyle(
-    fontSize: 16,
+  static TextStyle styleRegular16 = TextStyle(
+    fontSize: getResponseveText(16),
     fontWeight: FontWeight.w400,
-    color: Color(0xff064060),
+    color: const Color(0xff064060),
     fontFamily: 'Montserrat',
   );
-  static const TextStyle styleMedium16 = TextStyle(
-    fontSize: 16,
+  static TextStyle styleMedium16 = TextStyle(
+    fontSize: getResponseveText(16),
     fontWeight: FontWeight.w500,
-    color: Color(0xff064060),
+    color: const Color(0xff064060),
     fontFamily: 'Montserrat',
   );
-  static const TextStyle styleMedium20 = TextStyle(
-    fontSize: 20,
+  static TextStyle styleMedium20 = TextStyle(
+    fontSize: getResponseveText(20),
     fontWeight: FontWeight.w500,
     color: Colors.white,
     fontFamily: 'Montserrat',
   );
-  static const TextStyle styleSemibold16 = TextStyle(
-    fontSize: 16,
+  static TextStyle styleSemibold16 = TextStyle(
+    fontSize: getResponseveText(16),
     fontWeight: FontWeight.w600,
-    color: Color(0xff064060),
+    color: const Color(0xff064060),
     fontFamily: 'Montserrat',
   );
-  static const TextStyle styleSemibold20 = TextStyle(
-    fontSize: 20,
+  static TextStyle styleSemibold20 = TextStyle(
+    fontSize: getResponseveText(20),
     fontWeight: FontWeight.w600,
-    color: Color(0xff064060),
+    color: const Color(0xff064060),
     fontFamily: 'Montserrat',
   );
-  static const TextStyle styleRegulard12 = TextStyle(
-    fontSize: 12,
+  static TextStyle styleRegulard12 = TextStyle(
+    fontSize: getResponseveText(12),
     fontWeight: FontWeight.w400,
-    color: Color(0xffAAAAAA),
+    color: const Color(0xffAAAAAA),
     fontFamily: 'Montserrat',
   );
-  static const TextStyle styleRegulard14 = TextStyle(
-    fontSize: 14,
+  static TextStyle styleRegulard14 = TextStyle(
+    fontSize: getResponseveText(14),
     fontWeight: FontWeight.w400,
-    color: Color(0xffAAAAAA),
+    color: const Color(0xffAAAAAA),
     fontFamily: 'Montserrat',
   );
-  static const TextStyle styleSemibold24 = TextStyle(
-    fontSize: 24,
+  static TextStyle styleSemibold24 = TextStyle(
+    fontSize: getResponseveText(24),
     fontWeight: FontWeight.w600,
-    color: Color(0xff4EB7F2),
+    color: const Color(0xff4EB7F2),
     fontFamily: 'Montserrat',
   );
-  static const TextStyle styleSemibold18 = TextStyle(
-    fontSize: 18,
+  static TextStyle styleSemibold18 = TextStyle(
+    fontSize: getResponseveText(18),
     fontWeight: FontWeight.w600,
     color: Colors.white,
     fontFamily: 'Montserrat',
   );
-  static const TextStyle stylebold16 = TextStyle(
-    fontSize: 16,
+  static TextStyle stylebold16 = TextStyle(
+    fontSize: getResponseveText(16),
     fontWeight: FontWeight.w700,
-    color: Color(0xff4EB7F2),
+    color: const Color(0xff4EB7F2),
     fontFamily: 'Montserrat',
   );
+}
+
+double getResponseveText(double fontSize) {
+  double scaleFactor = getScaleFactor();
+
+  double responseveText = fontSize * scaleFactor;
+  double lowerLimit = fontSize * .8;
+  double upperLimit = fontSize * 1.2;
+  return responseveText.clamp(lowerLimit, upperLimit);
+}
+
+double getScaleFactor() {
+  var dispacther = PlatformDispatcher.instance;
+  var pyscialWidth = dispacther.views.first.physicalSize.width;
+  var devicePixelRatio = dispacther.views.first.devicePixelRatio;
+  var width = pyscialWidth / devicePixelRatio;
+  if (width < SizeConfig.tablet) {
+    return width / 500;
+  } else if (width < SizeConfig.desktop) {
+    return width / 1000;
+  } else {
+    return width / 1920;
+  }
 }

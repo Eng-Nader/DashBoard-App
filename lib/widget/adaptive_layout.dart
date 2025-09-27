@@ -1,5 +1,4 @@
 import 'package:dashboarda_app/utils/size_config.dart';
-import 'package:dashboarda_app/widget/mobile_layout.dart';
 import 'package:flutter/material.dart';
 
 class AdaptiveLayout extends StatelessWidget {

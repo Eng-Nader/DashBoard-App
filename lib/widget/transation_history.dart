@@ -8,21 +8,21 @@ class TransactionHistory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TransationHeader(),
-        SizedBox(
+        const TransationHeader(),
+        const SizedBox(
           height: 20,
         ),
         Text(
           '13 April 2022',
           style: AppStyle.styleMedium16,
         ),
-        SizedBox(
+        const SizedBox(
           height: 16,
         ),
-        TransationHistoryView(),
+        const TransationHistoryView(),
       ],
     );
   }
