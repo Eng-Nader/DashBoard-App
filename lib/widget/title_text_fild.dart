@@ -13,7 +13,7 @@ class TitleTextFild extends StatelessWidget {
       children: [
         Text(
           title,
-          style: AppStyle.styleMedium16.copyWith(
+          style: AppStyle.styleMedium16(context).copyWith(
             fontWeight: FontWeight.bold,
           ),
         ),

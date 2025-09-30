@@ -31,7 +31,7 @@ class _PaymentProcessState extends State<PaymentProcess> {
       children: [
           Text(
           'My card',
-          style: AppStyle.styleSemibold20,
+          style: AppStyle.styleSemibold20(context),
         ),
         const SizedBox(
           height: 24,

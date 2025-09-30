@@ -35,7 +35,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
               ),
               Text(
                 expensesModel.title,
-                style: AppStyle.styleSemibold16.copyWith(
+                style: AppStyle.styleSemibold16(context).copyWith(
                   color: Colors.white,
                 ),
               ),
@@ -44,7 +44,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
               ),
               Text(
                 expensesModel.data,
-                style: AppStyle.styleRegulard14.copyWith(
+                style: AppStyle.styleRegulard14(context).copyWith(
                   color: Colors.white,
                 ),
               ),
@@ -52,7 +52,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
                 height: 10,
               ),
               Text(expensesModel.price,
-                  style: AppStyle.styleSemibold24.copyWith(
+                  style: AppStyle.styleSemibold24(context).copyWith(
                     color: Colors.white,
                   ))
             ],

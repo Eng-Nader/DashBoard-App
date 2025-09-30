@@ -19,7 +19,7 @@ class InActiveDarwarItem extends StatelessWidget {
       ),
       title: Text(
         darwarItemModel.title,
-        style: AppStyle.styleRegular16,
+        style: AppStyle.styleRegular16(context),
       ),
     );
   }

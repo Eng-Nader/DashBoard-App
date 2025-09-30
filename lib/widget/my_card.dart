@@ -27,13 +27,13 @@ class MyCard extends StatelessWidget {
               ListTile(
                 title: Text(
                   'Name card',
-                  style: AppStyle.styleRegular16.copyWith(
+                  style: AppStyle.styleRegular16(context).copyWith(
                     color: Colors.white,
                   ),
                 ),
                 subtitle:   Text(
                   'Syah Bandi',
-                  style: AppStyle.styleMedium20,
+                  style: AppStyle.styleMedium20(context),
                 ),
                 trailing: SvgPicture.asset(
                   AppImage.imageVector,
@@ -44,7 +44,7 @@ class MyCard extends StatelessWidget {
               ),
               Text(
                 '0918 8124 0042 8129',
-                style: AppStyle.styleSemibold24.copyWith(
+                style: AppStyle.styleSemibold24(context).copyWith(
                   color: Colors.white,
                 ),
               ),
@@ -53,7 +53,7 @@ class MyCard extends StatelessWidget {
               ),
               Text(
                 '12/20 - 124',
-                style: AppStyle.styleRegular16.copyWith(
+                style: AppStyle.styleRegular16(context).copyWith(
                   color: Colors.white,
                 ),
               )

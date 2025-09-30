@@ -22,7 +22,7 @@ class CustomButton extends StatelessWidget {
               onPressed: () {},
               child: Text(
                 'Add more details',
-                style: AppStyle.styleSemibold18.copyWith(
+                style: AppStyle.styleSemibold18(context).copyWith(
                   color: const Color(0xff4EB7F2),
                 ),
               ),
@@ -45,7 +45,7 @@ class CustomButton extends StatelessWidget {
               onPressed: () {},
               child:   Text(
                 'Send Money',
-                style: AppStyle.styleSemibold18,
+                style: AppStyle.styleSemibold18(context),
               ),
             ),
           ),

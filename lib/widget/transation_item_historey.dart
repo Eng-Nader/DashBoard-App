@@ -18,15 +18,15 @@ class TransationItemHistorey extends StatelessWidget {
       child: ListTile(
         title: Text(
           transationHistoryModel.title,
-          style: AppStyle.styleSemibold16,
+          style: AppStyle.styleSemibold16(context),
         ),
         subtitle: Text(
           transationHistoryModel.subTitle,
-          style: AppStyle.styleRegular16,
+          style: AppStyle.styleRegular16(context),
         ),
         trailing: Text(
           transationHistoryModel.traling,
-          style: AppStyle.styleSemibold20.copyWith(
+          style: AppStyle.styleSemibold20(context).copyWith(
               color:
                   isActive ? const Color(0xffF3735E) : const Color(0xff7DD97B)),
         ),

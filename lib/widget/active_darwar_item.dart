@@ -19,7 +19,7 @@ class ActiveDarwarItem extends StatelessWidget {
       ),
       title: Text(
         darwarItemModel.title,
-        style: AppStyle.stylebold16,
+        style: AppStyle.stylebold16(context),
       ),
       trailing: Container(
         width: 3.27,

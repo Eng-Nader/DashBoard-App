@@ -19,11 +19,11 @@ class CustomUserInfo extends StatelessWidget {
         child: ListTile(
           title: Text(
             listTileModel.title,
-            style: AppStyle.styleSemibold16,
+            style: AppStyle.styleSemibold16(context),
           ),
           subtitle: Text(
             listTileModel.subTitle,
-            style: AppStyle.styleRegulard12,
+            style: AppStyle.styleRegulard12(context),
           ),
           leading: SvgPicture.asset(
             listTileModel.image,

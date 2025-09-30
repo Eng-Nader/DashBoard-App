@@ -54,7 +54,7 @@ class _DetailedIncomeChat extends State<DetailedIncomeChat> {
               detailsIncomes.length,
               (index) {
                 return PieChartSectionData(
-                  titleStyle: AppStyle.styleMedium16.copyWith(
+                  titleStyle: AppStyle.styleMedium16(context).copyWith(
                     fontWeight: FontWeight.bold,
                     color: currentIndex == index ? null : Colors.white,
                   ),

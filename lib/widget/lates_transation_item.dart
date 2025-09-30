@@ -17,11 +17,11 @@ class LatestTransactionItem extends StatelessWidget {
         leading: SvgPicture.asset(transationModel.image),
         title: Text(
           transationModel.title,
-          style: AppStyle.styleSemibold16,
+          style: AppStyle.styleSemibold16(context),
         ),
         subtitle: Text(
           transationModel.subTitle,
-          style: AppStyle.styleRegulard12,
+          style: AppStyle.styleRegulard12(context),
         ),
       ),
     );

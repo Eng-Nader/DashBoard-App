@@ -18,11 +18,11 @@ class IncomeChartDetailsItem extends StatelessWidget {
       ),
       title: Text(
         incomeChartModel.title,
-        style: AppStyle.styleRegular16,
+        style: AppStyle.styleRegular16(context),
       ),
       trailing: Text(
         incomeChartModel.present.toString(),
-        style: AppStyle.styleMedium16,
+        style: AppStyle.styleMedium16(context),
       ),
     );
   }

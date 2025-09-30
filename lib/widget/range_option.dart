@@ -15,7 +15,7 @@ class RangeOption extends StatelessWidget {
       children: [
         Text(
           text,
-          style: AppStyle.styleSemibold20,
+          style: AppStyle.styleSemibold20(context),
         ),
         Card(
           elevation: .8,
@@ -36,7 +36,7 @@ class RangeOption extends StatelessWidget {
               children: [
                   Text(
                   'Monthly',
-                  style: AppStyle.styleMedium16,
+                  style: AppStyle.styleMedium16(context),
                 ),
                 Transform.rotate(
                   angle: 4.71239,
