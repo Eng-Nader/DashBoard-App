@@ -18,6 +18,7 @@ class InActiveDarwarItem extends StatelessWidget {
         darwarItemModel.image,
       ),
       title: FittedBox(
+        alignment: Alignment.centerLeft,
         fit: BoxFit.scaleDown,
         child: Text(
           darwarItemModel.title,

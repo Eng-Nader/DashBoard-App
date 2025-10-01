@@ -48,12 +48,9 @@ class _AllExpensesItemListViewState extends State<AllExpensesItemListView> {
           onTap: () {
             upDateIndex(index);
           },
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
-            child: AllExpensesItem(
-              expensesModel: item,
-              isActive: currntIndex == index,
-            ),
+          child: AllExpensesItem(
+            expensesModel: item,
+            isActive: currntIndex == index,
           ),
         ),
       );

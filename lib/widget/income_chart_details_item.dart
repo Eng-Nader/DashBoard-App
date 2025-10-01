@@ -16,9 +16,12 @@ class IncomeChartDetailsItem extends StatelessWidget {
           shape: BoxShape.circle,
         ),
       ),
-      title: Text(
-        incomeChartModel.title,
-        style: AppStyle.styleRegular16(context),
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        child: Text(
+          incomeChartModel.title,
+          style: AppStyle.styleRegular16(context),
+        ),
       ),
       trailing: Text(
         incomeChartModel.present.toString(),
