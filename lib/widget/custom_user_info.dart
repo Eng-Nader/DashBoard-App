@@ -17,13 +17,19 @@ class CustomUserInfo extends StatelessWidget {
       color: const Color(0xffFAFAFA),
       child: Center(
         child: ListTile(
-          title: Text(
-            listTileModel.title,
-            style: AppStyle.styleSemibold16(context),
+          title: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              listTileModel.title,
+              style: AppStyle.styleSemibold16(context),
+            ),
           ),
-          subtitle: Text(
-            listTileModel.subTitle,
-            style: AppStyle.styleRegulard12(context),
+          subtitle: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              listTileModel.subTitle,
+              style: AppStyle.styleRegulard12(context),
+            ),
           ),
           leading: SvgPicture.asset(
             listTileModel.image,

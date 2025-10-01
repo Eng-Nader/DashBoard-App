@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:dashboarda_app/models/expenses_model.dart';
 import 'package:dashboarda_app/core/utils/app_images.dart';
 import 'package:dashboarda_app/widget/all_expenses_item.dart';
@@ -40,33 +42,21 @@ class _AllExpensesItemListViewState extends State<AllExpensesItemListView> {
         children: expensesList.asMap().entries.map((e) {
       int index = e.key;
       ExpensesModel item = e.value;
-      if (index == 1) {
-        return Expanded(
-          child: GestureDetector(
-            onTap: () {
-              upDateIndex(index);
-            },
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
-              child: AllExpensesItem(
-                expensesModel: item,
-                isActive: currntIndex == index,
-              ),
-            ),
-          ),
-        );
-      } else {
-        return Expanded(
-            child: GestureDetector(
+
+      return Expanded(
+        child: GestureDetector(
           onTap: () {
             upDateIndex(index);
           },
-          child: AllExpensesItem(
-            expensesModel: item,
-            isActive: currntIndex == index,
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
+            child: AllExpensesItem(
+              expensesModel: item,
+              isActive: currntIndex == index,
+            ),
           ),
-        ));
-      }
+        ),
+      );
     }).toList());
   }
 

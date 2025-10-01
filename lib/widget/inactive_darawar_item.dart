@@ -17,9 +17,12 @@ class InActiveDarwarItem extends StatelessWidget {
       leading: SvgPicture.asset(
         darwarItemModel.image,
       ),
-      title: Text(
-        darwarItemModel.title,
-        style: AppStyle.styleRegular16(context),
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        child: Text(
+          darwarItemModel.title,
+          style: AppStyle.styleRegular16(context),
+        ),
       ),
     );
   }
