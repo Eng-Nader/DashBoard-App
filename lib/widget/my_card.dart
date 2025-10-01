@@ -20,7 +20,7 @@ class MyCard extends StatelessWidget {
           color: Colors.blue,
         ),
         child: Padding(
-          padding: const EdgeInsets.all(10),
+          padding: const EdgeInsets.all(4),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
@@ -31,7 +31,7 @@ class MyCard extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-                subtitle:   Text(
+                subtitle: Text(
                   'Syah Bandi',
                   style: AppStyle.styleMedium20(context),
                 ),
@@ -48,8 +48,10 @@ class MyCard extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              const SizedBox(
-                height: 8,
+              const Flexible(
+                child: SizedBox(
+                  height: 10,
+                ),
               ),
               Text(
                 '12/20 - 124',
